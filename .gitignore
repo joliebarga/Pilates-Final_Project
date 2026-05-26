@@ -1,0 +1,6 @@
+.venv/
+pose_landmarker.task
+output/
+__pycache__/
+*.pyc
+.DS_Store
