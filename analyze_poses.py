@@ -11,7 +11,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from PIL import Image
 
-# ── Skeleton connections (BlazePose 33-landmark topology) ────────────────────
+#Pose Dots
 POSE_CONNECTIONS = [
     (0, 1), (1, 2), (2, 3), (3, 7),
     (0, 4), (4, 5), (5, 6), (6, 8),
@@ -23,15 +23,14 @@ POSE_CONNECTIONS = [
     (27, 29), (28, 30), (29, 31), (30, 32), (27, 31), (28, 32),
 ]
 
-# Landmark indices
+# Key Bosy Parta
 IDX = {
     "LEFT_SHOULDER": 11, "RIGHT_SHOULDER": 12,
     "LEFT_ELBOW": 13,    "RIGHT_ELBOW": 14,
     "LEFT_WRIST": 15,    "RIGHT_WRIST": 16,
     "LEFT_HIP": 23,      "RIGHT_HIP": 24,
     "LEFT_KNEE": 25,     "RIGHT_KNEE": 26,
-    "LEFT_ANKLE": 27,    "RIGHT_ANKLE": 28,
-}
+    "LEFT_ANKLE": 27,    "RIGHT_ANKLE": 28, }
 
 # (display_name, point_a_key, vertex_key, point_c_key)
 ANGLE_DEFS = [
@@ -45,10 +44,10 @@ ANGLE_DEFS = [
     ("R Knee",     "RIGHT_HIP",      "RIGHT_KNEE",    "RIGHT_ANKLE"),
 ]
 
-# ── Colours ──────────────────────────────────────────────────────────────────
-LEFT_COLOR  = (0, 200, 255)   # yellow-ish
-RIGHT_COLOR = (255, 100, 0)   # blue-ish
-MID_COLOR   = (180, 255, 180) # light green
+# ── Colors for lines
+LEFT_COLOR  = (0, 200, 255)   # yellow
+RIGHT_COLOR = (255, 100, 0)   # blue
+MID_COLOR   = (180, 255, 180) # green
 DOT_COLOR   = (255, 255, 255)
 TEXT_COLOR  = (50, 255, 50)
 
